@@ -1,13 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package semana1;
 
-/**
- *
- * @author lcahu
- */
+import javax.swing.JOptionPane;
+
 public class Ejercicio4_CalculoAreaTriangulo {
-    
+
+    public static void main(String[] args) {
+
+        double base = Double.parseDouble(JOptionPane.showInputDialog("Ingresar base del Triangulo"));
+        double altura = Double.parseDouble(JOptionPane.showInputDialog("Ingresar la altura del triangulo"));
+        double area = (base * altura) / 2;
+        System.out.println("Triangulo con base: " + base);
+        System.out.println("Altura: " + altura);
+        System.out.println("Tiene un Area de: " + area);
+    }
 }
