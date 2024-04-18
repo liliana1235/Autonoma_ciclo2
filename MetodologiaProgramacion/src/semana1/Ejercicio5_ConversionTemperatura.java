@@ -1,13 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package semana1;
 
-/**
- *
- * @author lcahu
- */
+import javax.swing.JOptionPane;
+
 public class Ejercicio5_ConversionTemperatura {
-    
+
+    public static void main(String[] args) {
+        double celsius = Double.parseDouble(JOptionPane.showInputDialog("Temperatura en grados Celsius"));
+        double fahrenheit = (celsius * 9 / 5) + 32;
+        System.out.println("Temperatura en celsius: " + celsius);
+        System.out.println("Grados Fahrenheit: " + fahrenheit);
+    }
 }
