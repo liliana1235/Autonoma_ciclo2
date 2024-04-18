@@ -1,13 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package semana1;
 
-/**
- *
- * @author lcahu
- */
+import javax.swing.JOptionPane;
+
 public class Ejercicio3_EntradaSalidaVariable {
-    
+
+    public static void main(String[] args) {
+
+        String nombre = JOptionPane.showInputDialog("nombre");
+        int edad = Integer.parseInt(JOptionPane.showInputDialog("edad"));
+
+        System.out.println("Hola " + nombre);
+
+        System.out.println("Tienes " + edad + " anios ");
+
+    }
 }
